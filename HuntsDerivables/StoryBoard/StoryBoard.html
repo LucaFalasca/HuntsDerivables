@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		
+		<!-- Bootstrap CSS -->
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    	<title>Hunts storyboards</title>
+
+		<script language="javascript"> 
+			function home() {
+				document.getElementById("image").src = "Home.png";
+				document.getElementById("home").style.backgroundColor = "#000000";
+				document.getElementById("login").style.backgroundColor = "#db7b0d";
+				document.getElementById("manage_hunt").style.backgroundColor = "#cf233a";
+				document.getElementById("play_hunt").style.backgroundColor = "#db7b0d";
+			}
+			function login() {
+				document.getElementById("image").src = "Login.png";
+				document.getElementById("home").style.backgroundColor = "#cf233a";
+				document.getElementById("login").style.backgroundColor = "#000000";
+				document.getElementById("manage_hunt").style.backgroundColor = "#cf233a";
+				document.getElementById("play_hunt").style.backgroundColor = "#db7b0d";
+			}
+			function manageHunt() {
+				document.getElementById("image").src = "ManageHunt.png";
+				document.getElementById("home").style.backgroundColor = "#cf233a";
+				document.getElementById("login").style.backgroundColor = "#db7b0d";
+				document.getElementById("manage_hunt").style.backgroundColor = "#000000";
+				document.getElementById("play_hunt").style.backgroundColor = "#db7b0d";
+			}
+			function playHunt() {
+				document.getElementById("image").src = "PlayHunt.png";
+				document.getElementById("home").style.backgroundColor = "#cf233a";
+				document.getElementById("login").style.backgroundColor = "#db7b0d";
+				document.getElementById("manage_hunt").style.backgroundColor = "#cf233a";
+				document.getElementById("play_hunt").style.backgroundColor = "#000000";
+			}
+		</script>
+
+	</head>
+
+    <body>
+        <body>
+            <div class="row fill">
+                <div class="col-2">
+                    <div class="row" style="padding: 2%;">
+                        <button class="btn btn-secondary"id="home" onclick="home();" style="background-color: #cf233a;">Home (MANCUSO)</button>
+                    </div>
+			<div class="row" style="padding: 2%;">
+                        <button class="btn btn-secondary" id="manage_hunt" onclick="manageHunt();" style="background-color: #cf233a;">Manage Hunt (MANCUSO)</button>
+                    </div>
+                    <div class="row" style="padding: 2%;">
+                        <button class="btn btn-secondary"id="login" onclick="login();" style="background-color: #db7b0d;">Login (FALASCA)</button>
+                    </div>
+                    <div class="row" style="padding: 2%;">
+                        <button class="btn btn-secondary" id="play_hunt" onclick="playHunt();" style="background-color: #db7b0d;">PlayHunt (FALASCA)</button>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                	<div class="container" style="padding: 2%;">
+                    	<img id="image" src="Home.png" class="img-responsive" style="width: 90%; height: auto;">
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

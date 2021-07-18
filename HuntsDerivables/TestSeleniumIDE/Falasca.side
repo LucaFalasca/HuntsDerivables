@@ -1,0 +1,106 @@
+{
+  "id": "c234716a-76fb-4e9e-91bd-126cb12129b5",
+  "version": "2.0",
+  "name": "test",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "4104d040-cee9-4c81-8918-5f431bd16878",
+    "name": "testAnswer",
+    "commands": [{
+      "id": "862a7cbb-2436-41ed-a3a3-62f9e55868f1",
+      "comment": "",
+      "command": "open",
+      "target": "/HuntsTestWebConversion/MainMenu.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd561639-d9ad-4344-9241-ee9a95f6cb34",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2035f28b-29ef-4709-98e8-5b714f27bb5a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(3) .btn",
+      "targets": [
+        ["css=.list-group-item:nth-child(3) .btn", "css:finder"],
+        ["xpath=(//button[@name='play'])[3]", "xpath:attributes"],
+        ["xpath=//li[3]/form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e339103-7fa6-4783-a766-1a1cae2362fd",
+      "comment": "",
+      "command": "click",
+      "target": "name=riddle",
+      "targets": [
+        ["name=riddle", "name"],
+        ["css=.list-group-item:nth-child(1) .btn", "css:finder"],
+        ["xpath=//button[@name='riddle']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Answer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3711a3ac-3402-437a-9fb2-539eed547b5c",
+      "comment": "",
+      "command": "click",
+      "target": "name=userAnswer",
+      "targets": [
+        ["name=userAnswer", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='userAnswer']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e83339e-4670-4b2a-ad2d-a9b3b6d902f8",
+      "comment": "",
+      "command": "type",
+      "target": "name=userAnswer",
+      "targets": [
+        ["name=userAnswer", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='userAnswer']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "salotto"
+    }, {
+      "id": "84cb85ea-8ccb-44dc-8077-5cb63cbe61ae",
+      "comment": "",
+      "command": "click",
+      "target": "name=answer",
+      "targets": [
+        ["name=answer", "name"],
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//button[@name='answer']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8af7c904-ddcb-4226-9c81-e35ead6f3fa2",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "51270dcf-feaa-4332-a1c3-938ae23ccab5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4104d040-cee9-4c81-8918-5f431bd16878"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

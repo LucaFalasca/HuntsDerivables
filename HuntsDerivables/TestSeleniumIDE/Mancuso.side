@@ -1,0 +1,194 @@
+{
+  "id": "3b3e05a6-529d-4e9c-ae27-4862b1556097",
+  "version": "2.0",
+  "name": "TestAndrea",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "8e4ce9dc-70c1-4b6f-8129-85ac8d5a1933",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "ad9bb049-0a48-48d4-8b15-42c9f35739b7",
+    "name": "Andrea",
+    "commands": [{
+      "id": "296352d9-5799-479b-ac60-63e9dc128579",
+      "comment": "",
+      "command": "open",
+      "target": "/HuntsTestWebConversion/MainMenu.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76eb5252-9b98-49bb-9d06-ce55b571e76b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f827b83a-7bee-4502-b30b-ac0d71c71ec6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Login.jsp')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "245a758f-78d2-44fb-afa2-4daf8dae58ca",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input_user", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df7c34b3-1068-4a68-831f-8c25f96cfb2b",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.input_user", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pippo"
+    }, {
+      "id": "51e03f59-90a7-40e8-bec8-2d1f7db7572a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.input_pass", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "pippopass"
+    }, {
+      "id": "a3fcfbb0-5f46-4043-bc31-0317e82fabc4",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [
+        ["name=login", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='login']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "734c96c1-ae22-431f-ae2f-87e6f6c93614",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-circle > img",
+      "targets": [
+        ["css=.btn-circle > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://img.icons8.com/ios-glyphs/30/000000/plus-math.png')]", "xpath:img"],
+        ["xpath=//form/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9175516-5780-443b-8b9d-0db176f96652",
+      "comment": "",
+      "command": "click",
+      "target": "id=riddle",
+      "targets": [
+        ["id=riddle", "id"],
+        ["name=riddle", "name"],
+        ["css=#riddle", "css:finder"],
+        ["xpath=//input[@id='riddle']", "xpath:attributes"],
+        ["xpath=//form[@id='riddlePost']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6371b103-c13b-4492-b747-65a811f71bd5",
+      "comment": "",
+      "command": "type",
+      "target": "id=riddle",
+      "targets": [
+        ["id=riddle", "id"],
+        ["name=riddle", "name"],
+        ["css=#riddle", "css:finder"],
+        ["xpath=//input[@id='riddle']", "xpath:attributes"],
+        ["xpath=//form[@id='riddlePost']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "04e138d7-381d-4474-a7fd-9e7922753c69",
+      "comment": "",
+      "command": "click",
+      "target": "id=solution",
+      "targets": [
+        ["id=solution", "id"],
+        ["name=solution", "name"],
+        ["css=#solution", "css:finder"],
+        ["xpath=//input[@id='solution']", "xpath:attributes"],
+        ["xpath=//form[@id='riddlePost']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33c8d2e3-d2c5-4717-a200-6feeee89096a",
+      "comment": "",
+      "command": "type",
+      "target": "id=solution",
+      "targets": [
+        ["id=solution", "id"],
+        ["name=solution", "name"],
+        ["css=#solution", "css:finder"],
+        ["xpath=//input[@id='solution']", "xpath:attributes"],
+        ["xpath=//form[@id='riddlePost']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "75cee4e7-e87c-437e-ac1c-88261aa3065f",
+      "comment": "",
+      "command": "click",
+      "target": "name=addRiddle",
+      "targets": [
+        ["name=addRiddle", "name"],
+        ["css=input:nth-child(9)", "css:finder"],
+        ["xpath=//input[@name='addRiddle']", "xpath:attributes"],
+        ["xpath=//form[@id='riddlePost']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bc5d909-b1c4-4448-a4b5-bcec14ab013a",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#tbodyRiddle th:nth-child(1)",
+      "targets": [
+        ["css=#tbodyRiddle th:nth-child(1)", "css:finder"],
+        ["xpath=//tbody[@id='tbodyRiddle']/tr/th", "xpath:idRelative"],
+        ["xpath=//tbody/tr/th", "xpath:position"],
+        ["xpath=//th[contains(.,'Test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5983d648-95cf-481f-bc19-05b9d6b3dcfe",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8e4ce9dc-70c1-4b6f-8129-85ac8d5a1933"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
